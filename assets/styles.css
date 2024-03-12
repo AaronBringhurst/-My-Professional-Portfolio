@@ -1,0 +1,115 @@
+
+:root {
+    --dark: #919192;
+    --light: #fff;
+    --headerfooter: #13293d;
+    --navlink-color: #b9c6ae;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: var(--dark);
+
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--headerfooter);
+    color: var(--light);
+
+  }
+
+  h1, h2, h3 {
+    font-family: 'Roboto Slab', Georgia, serif;
+}
+
+body, p, li {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+  h1 {
+    font-size: 200%;
+  }
+
+   
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+
+  }
+  
+  nav a {
+    background-color: unset;
+    color: var(--navlink-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: var(--light);
+    text-shadow: 0 0 15px #fff, 0 0 10px #0000FF;
+  }
+  
+  
+  h2 {
+    margin: 2% 0;
+    font-size: 250%;
+  }
+ 
+  .costco-id {
+    font-weight: bold;
+    
+  }
+
+  .costco-id:hover {
+    color: #E32A36; /*Costco brand color */
+    text-decoration: underline; /* Adds underline on hover for better user interaction */
+}
+  main {
+    display: flex;
+    flex: 1 1 0;
+    max-width: 96%;
+    margin: 2% auto;
+  }
+  
+  article {
+    /* If we were to change the value of `--dark`, then all references to it would change automatically */
+    border-bottom: 1px solid var(--dark);
+  }
+  
+  article p {
+    margin: 2% 0;
+    font-size: 110%;
+  }
+  
+  article ul {
+    margin-left: 5%;
+    font-size: 110%;
+    list-style: circle;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
+  
