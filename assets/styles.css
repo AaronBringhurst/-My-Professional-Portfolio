@@ -111,7 +111,7 @@
   }
   
   
-  h2 {
+  h2, h3 {
     margin: 2% 0;
     font-size: 250%;
   }
@@ -185,10 +185,20 @@
 
   footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100%vh;
     padding: 2%;
     background-color: var(--dark);
     color: var(--light);
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    gap: 50px;
   }
   
   @media screen and (max-width: 768px) {
